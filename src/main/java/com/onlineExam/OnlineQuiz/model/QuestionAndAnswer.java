@@ -19,27 +19,34 @@ public class QuestionAndAnswer {
 	
 	@NonNull
 	private String answer;
-
-	public QuestionAndAnswer( String question, String answer) {
-		super();
-		
-		this.question = question;
-		this.answer = answer;
-	}
-
+	
+	@NonNull
+	private String answerOption1;
+	
+	@NonNull
+	private String answerOption2;
+	
+	@NonNull
+	private String answerOption3;
+	
+	@NonNull
+	private String answerOption4;
+	
+	
 	public QuestionAndAnswer() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-
-
-	public String getQuestion() {
-		return question;
-	}
-
-	public void setQuestion(String question) {
+	
+	public QuestionAndAnswer(String question, String answer, String answerOption1, String answerOption2,
+			String answerOption3, String answerOption4) {
+		super();
 		this.question = question;
+		this.answer = answer;
+		this.answerOption1 = answerOption1;
+		this.answerOption2 = answerOption2;
+		this.answerOption3 = answerOption3;
+		this.answerOption4 = answerOption4;
 	}
 
 	public String getAnswer() {
@@ -50,11 +57,43 @@ public class QuestionAndAnswer {
 		this.answer = answer;
 	}
 
+	public String getQuestion() {
+		return question;
+	}
+	public void setQuestion(String question) {
+		this.question = question;
+	}
+	public String getAnswerOption1() {
+		return answerOption1;
+	}
+	public void setAnswerOption1(String answerOption1) {
+		this.answerOption1 = answerOption1;
+	}
+	public String getAnswerOption2() {
+		return answerOption2;
+	}
+	public void setAnswerOption2(String answerOption2) {
+		this.answerOption2 = answerOption2;
+	}
+	public String getAnswerOption3() {
+		return answerOption3;
+	}
+	public void setAnswerOption3(String answerOption3) {
+		this.answerOption3 = answerOption3;
+	}
+	public String getAnswerOption4() {
+		return answerOption4;
+	}
+	public void setAnswerOption4(String answerOption4) {
+		this.answerOption4 = answerOption4;
+	}
 	@Override
 	public String toString() {
-		return "QuestionAndAnswer [question=" + question + ", answer=" + answer + "]";
+		return "QuestionAndAnswer [question=" + question + ", answer=" + answer + ", answerOption1=" + answerOption1
+				+ ", answerOption2=" + answerOption2 + ", answerOption3=" + answerOption3 + ", answerOption4="
+				+ answerOption4 + "]";
 	}
-	
+
 	
 	
 
